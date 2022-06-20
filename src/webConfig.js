@@ -1,0 +1,1 @@
+export const link_api = 'http://localhost:5000/api/v1'

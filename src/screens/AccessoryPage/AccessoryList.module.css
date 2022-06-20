@@ -1,0 +1,175 @@
+@keyframes appearBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  margin: 2rem;
+}
+.headingContainer {
+}
+
+.headings {
+  justify-content: space-between;
+  margin: 1.2rem 0;
+}
+
+.heading {
+  color: var(--black-color);
+  font-size: 2.3rem;
+  padding: 0;
+}
+
+.searchGroup {
+  padding: 0;
+  /* border-radius: 12px; */
+  box-shadow: 1px 4px 4px 0px #ddd;
+  margin: 1rem 0;
+}
+
+#bootstrap-overrides .input-group {
+  width: auto;
+}
+
+.searchBox button  {
+  color: black ;
+  background-color: white ;
+  border-color: black ;
+  background-size: cover;
+}
+
+.searchBox button:hover {
+  background-color: var(--black-color);
+  color: var(--yellow-color);
+}
+
+.searchBox button:active {
+  background-color: var(--black-color);
+  color: var(--yellow-color);
+}
+
+.searchBox button:focus {
+  background-color: var(--black-color);
+  color: var(--yellow-color);
+}
+
+.searchTitle {
+  /* border-radius: 12px 0px 0px 12px; */
+}
+.searchBox {
+  /* border-radius: 0px 12px 12px 0px; */
+}
+
+.headingNumber {
+  font-size: 1.2rem;
+}
+
+.main {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.filterContainer {
+  margin: 0 0;
+}
+
+.filterContainer .filter {
+  padding: 0.5rem;
+  border: 1px solid #eee;
+}
+
+.rangeInput {
+  margin: 12px 0;
+}
+
+.cardContainer {
+  /* flex cua main */
+  flex: 1;
+  /* 
+  display: grid;
+  grid-template-columns: 50% 50%; */
+  grid-gap: 16px;
+  position: inherit;
+  /* border-left: 1px solid #000;  */
+  /* margin: 1rem; */
+}
+
+.card {
+  margin: 12px;
+  height: 300px;
+  display: border-box;
+  /* position: absolute; */
+  background: fff;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  margin: 0;
+  margin-bottom: 2rem;
+  transition: all 0.4s cubic-bezier(1, 0.4, 0.4, 1);
+  animation-name: appearBottom;
+  animation-duration: 0.5s;
+}
+
+.cardContainer .card {
+  height: 24em;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+}
+.card:hover {
+  box-shadow: 0px 4px 10px 4px rgb(0 0 0 / 10%);
+  transform: translateY(-4px);
+  transition: linear 0.1s;
+  z-index: 10;
+}
+
+.card > .image {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 50%,
+    rgba(252, 252, 252, 0) 70%,
+    rgba(246, 246, 246, 1) 100%
+  );
+  /* url(../../Images/andre-tan-79.jpg); */
+  background-size: cover;
+  background-position: center center;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.btnWrapper a {
+  background: var(--white-color);
+  color: var(--black-color);
+  border-color: var(--back-color);
+}
+
+.btnWrapper a:hover {
+  background: var(--black-color);
+  color: var(--yellow-color);
+  border-color: var(--back-color);
+}
+
+.heartIcon {
+  width: inherit;
+  font-size: 2rem;
+  color: #ccc;
+  transition: color 0.5s ease;
+}
+
+.heartIconClicked {
+  color: red;
+  transition: color 0.5s ease;
+}
+
+.pagination {
+  text-align: center;
+}

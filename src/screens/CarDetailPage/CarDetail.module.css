@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+@import url("../../style/_variables.css");
+
+@keyframes appear {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appearRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* .main {
+  overflow: hidden;
+} */
+
+/* banner */
+
+.bannerContainer {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.bannerImg {
+  height: 60vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.75) 70%,
+    rgb(0, 0, 0) 100%
+  );
+  /* url(../../Images/Rectangle12.png); */
+  background-size: cover;
+  background-position: center center;
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+
+
+
+.carDetailContainer {
+  margin: 1rem 2rem;
+  position: absolute;
+  bottom: 0;
+  color: var(--white-color);
+}
+
+.carName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.carDetailContainer .bookButton {
+  height: 3rem;
+  font-size: var(--font-title);
+  width: 100%;
+  background-color: var(--yellow-color);
+  border: 1px solid var(--white-color);
+  color: var(--black-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-right: 5px; */
+}
+
+.carDetailContainer .bookButton:hover {
+  background-color: var(--black-color);
+  color: var(--yellow-color);
+}
+
+.carDetailContainer .heartIcon {
+  width: inherit;
+  font-size: 2rem;
+  color: #ccc;
+  transition: color 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.carDetailContainer .heartIconClicked {
+  color: red;
+  transition: color 0.5s ease;
+}
+.carDetail {
+  margin-top: 1rem;
+}
+
+.carDetail .carPrice {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.carDetail .title,
+.carDesc .title {
+  font-size: var(--font-title);
+  font-weight: bold;
+}
+
+.carDetail .text,
+.carDesc .text {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* .carDescWrapper */
+
+.carDescWrapper {
+  margin: 2rem 1.5rem;
+}
+
+.carDesc .title {
+  font-size: var(--font-title);
+}
+
+.carDesc .text {
+  font-style: normal;
+  text-align: justify;
+  color: #555;
+}
+
+.carImgWrapper {
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%);
+  display: grid;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.carDescWrapper .carImg {
+  height: 100%;
+  /* background: url("https://res.cloudinary.com/sevenimg/image/upload/v1652028058/no-image-available_yyhche.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  animation-name: appearRight;
+  animation-duration: 1s;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.carDescWrapper .carDesc {
+  animation-name: appearLeft;
+  animation-duration: 1s;
+}
+
+/* Car Spec */
+
+.carSpecWrapper {
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.specTitle {
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.specRow {
+  border-bottom: 1px solid var(--border-gray-color);
+  font-size: var(--font-title);
+  margin: 1rem 0;
+}
+
+.specRowTitle {
+  animation-name: appearLeft;
+  animation-duration: 1s;
+}
+
+.specRowText {
+  text-align: right;
+  font-style: italic;
+  animation-name: appearRight;
+  animation-duration: 1s;
+}
+
+.specRowPrice {
+  font-size: var(--font-h2);
+  font-weight: bold;
+}
+
+.specRowPrice .specRowText {
+  color: var(--black-color);
+  /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+}
+
+.specRowText:hover {
+  color: var(--yellow-color);
+  /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+}
+
+.specRowPolicy {
+  text-align: justify;
+  font-size: var(--font-note);
+  color: var(--gray-color);
+  padding-bottom: 10px;
+}
+
+.buttonWrapper {
+  align-items: center;
+}
+
+.buttonWrapper .button {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonWrapper .bookButton {
+  height: 3rem;
+  font-size: var(--font-title);
+  width: 60%;
+  background-color: var(--yellow-color);
+  border: 1px solid var(--border-gray-color);
+  color: var(--black-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.8rem 0;
+}
+
+.buttonWrapper .bookButton:hover {
+  border-color: var(--black-color);
+  background-color: var(--black-color);
+  color: var(--yellow-color);
+}
+
+.buttonWrapper .compareButton {
+  height: 3rem;
+  font-size: var(--font-title);
+  width: 60%;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-gray-color);
+  color: var(--black-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.8rem 0;
+}
+
+.buttonWrapper .compareButton:hover {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+}
+
+.colorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.color {
+  width: var(--font-title);
+  height: var(--font-title);
+  border: 1px var(--black-color) solid;
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* .bannerContainer {
+    background-position: 50% 70%;
+  } */
+}

@@ -1,0 +1,292 @@
+@import url("../../style/_variables.css");
+
+.container {
+  margin: 2rem;
+}
+
+
+.headings {
+  justify-content: space-between;
+  margin: 1.2rem 0;
+}
+
+.heading {
+  color: var(--black-color);
+  font-size: 2.3rem;
+  padding: 0;
+}
+
+.searchGroup {
+  padding: 0;
+  /* border-radius: 12px; */
+  box-shadow: 1px 4px 4px 0px #ddd;
+  margin: 1rem 0;
+}
+
+.searchBox button  {
+  color: black ;
+  background-color: white ;
+  border-color: black ;
+  background-size: cover;
+}
+
+.searchBox button:hover {
+  background-color: var(--black-color);
+  color: var(--yellow-color);
+}
+
+.searchBox button:active {
+  background-color: var(--black-color);
+  color: var(--yellow-color);
+}
+
+.searchBox button:focus {
+  background-color: var(--black-color);
+  color: var(--yellow-color);
+}
+
+#bootstrap-overrides .input-group {
+  width: auto;
+}
+
+
+.headingNumber {
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.filterContainer {
+  margin: 0 0;
+}
+
+.filterContainer .filter {
+  padding: 0.5rem;
+  border: 1px solid #eee;
+}
+
+.rangeInput {
+  margin: 12px 0;
+}
+
+.cardContainer {
+  /* flex cua main */
+  flex: 1;
+  /* 
+  display: grid;
+  grid-template-columns: 50% 50%; */
+  grid-gap: 16px;
+  position: inherit;
+  /* border-left: 1px solid #000;  */
+  /* margin: 1rem; */
+}
+
+/* .cardContainer::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+} */
+
+.listCardContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  color: #ff4200;
+  height: 300px;
+  display: border-box;
+  background: fff;
+  margin: 0;
+  margin-bottom: 2rem;
+  transition: all 0.4s cubic-bezier(1, 0.4, 0.4, 1);
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  transition: linear 0.1s;
+}
+.card > .setting {
+  font-size: 0.75em;
+  color: #f6f6f6;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.card > .setting > .fa:first-child {
+  margin-bottom: 15px;
+}
+.card > .setting > .fa:hover {
+  opacity: 1;
+}
+.card > .setting > .fa {
+  display: block;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: all 0.2s ease-in-out;
+}
+.card > .setting > .fa.active {
+  color: red;
+  opacity: 1;
+}
+.card > .image {
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 50%,
+    rgba(252, 252, 252, 0) 70%,
+    rgba(246, 246, 246, 1) 100%
+  );
+  /* url(../../Images/Rectangle12.png); */
+  background-size: cover;
+  background-position: center center;
+}
+.card .description {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.descGroup {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.card .description h4 {
+  margin: 0.8rem;
+}
+
+.arrowIcon {
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+  color: var(--yellow-color);
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.carName {
+  font-size: 1.4rem;
+  color: var(--yellow-color);
+}
+.card .description h4 {
+  /* white-space: nowrap;
+  overflow: hidden; */
+  text-overflow: ellipsis;
+}
+.card .long-description {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  margin-top: 0em;
+  padding: 0 6%;
+}
+.card.expand {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.card.expand > .setting {
+  font-size: 1.3em;
+}
+.card.expand .long-description {
+  margin-top: 2em;
+  opacity: 1;
+}
+
+/* new css for card img */
+
+.imgMain {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgb(0, 0, 0, 0.8) 100%
+  );
+  background-size: cover;
+  background-position: center center;
+  clip-path: polygon(0% 0%, 35% 0%, 0% 100%, 0 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.img2 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgb(0, 0, 0, 0.7) 100%
+  );
+  background-size: cover;
+  background-position: center center;
+  clip-path: polygon(35% 0%, 70% 0%, 35% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img3 {
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(
+    rgba(0, 0, 0, 0.1) 100%,
+    rgba(0, 0, 0, 0.1) 1000%,
+    rgb(0, 0, 0, 0.1) 100%
+  ); */
+  background-size: cover;
+  background-position: center center;
+  clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 30% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heartIcon {
+  width: inherit;
+  font-size: 2rem;
+  color: #ccc;
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+}
+
+.heartIconClicked {
+  color: var(--red-color);
+}
+
+.pagination {
+  text-align: center;
+}
