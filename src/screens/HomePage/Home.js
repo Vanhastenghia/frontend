@@ -62,7 +62,7 @@ function Home(props) {
           </div>
           <div className={style["accessories-header"]}>bài báo</div>
           <div className={style["accessories-content"]}>
-            LÀM ĐẸP CHIẾC XE CỦA BẠN
+            GIA TĂNG TRI THỨC CỦA BẠN
           </div>
           <div className={`${style.accessories} row`}>
             {/* <div className={style["accessories-header"]}>bài báo</div>
