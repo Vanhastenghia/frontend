@@ -47,15 +47,15 @@ function CarOrderHistory(props) {
             <Menu.Item key="1">
               <Link to="/user">Thông tin</Link>
             </Menu.Item>
-            <Menu.Item key="2">
+            {/* <Menu.Item key="2">
               <Link to="/user/my-order/cars">Lịch sử đặt hàng xe</Link>
-            </Menu.Item>
-            <Menu.Item key="3">
+            </Menu.Item> */}
+            <Menu.Item key="2">
               <Link to="/user/my-order/accessories">
-                Lịch sử đặt hàng phụ kiện
+                Lịch sử đặt báo
               </Link>
             </Menu.Item>
-            <Menu.Item key="4">
+            <Menu.Item key="3">
               <a onClick={signoutHandler}> {"Đăng xuất"}</a>
             </Menu.Item>
           </Menu>

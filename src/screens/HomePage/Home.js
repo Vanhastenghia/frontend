@@ -60,12 +60,12 @@ function Home(props) {
               Nhà phân phối xe Seven hàng đầu Việt Nam
             </div>
           </div>
-          <div className={style["accessories-header"]}>PHỤ KIỆN</div>
+          <div className={style["accessories-header"]}>bài báo</div>
           <div className={style["accessories-content"]}>
             LÀM ĐẸP CHIẾC XE CỦA BẠN
           </div>
           <div className={`${style.accessories} row`}>
-            {/* <div className={style["accessories-header"]}>PHỤ KIỆN</div>
+            {/* <div className={style["accessories-header"]}>bài báo</div>
             <div className={style["accessories-content"]}>
               LÀM ĐẸP CHIẾC XE CỦA BẠN
             </div>

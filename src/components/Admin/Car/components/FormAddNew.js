@@ -16,12 +16,12 @@ let ModalAddCar = props => {
             <div className='row bg-white m-3 pt-3' >
                 <div className='col-12 mb-3 text-left' >
                 <label className={`${style.red_symbol}`}>Những trường có dấu (*) là bắt buộc </label> <br></br>
-                    <label className="font-weight-bold text-muted">Tên xe </label>
+                    <label className="font-weight-bold text-muted">Tên báo </label>
                     <label className={`${style.red_symbol}`}>*</label>
                     <Field
                         name="name"
                         component={RenderInputText}
-                        placeholder='Tên xe'
+                        placeholder='Tên báo'
                     />
                 </div>
                 <div className='col-12 mb-3 text-left' >

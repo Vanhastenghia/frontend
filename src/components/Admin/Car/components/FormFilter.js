@@ -13,7 +13,7 @@ let ContactForm = props => {
                         <Field
                             name="name"
                             component={RenderInputText}
-                            placeholder='Tên Xe'
+                            placeholder='Tên báo'
                         />
                     </div>
                     <div className='col-2'>

@@ -152,7 +152,7 @@ class index extends Component {
               style={{ maxWidth: 100, maxHeight: 100 }}
               alt=""
             ></img>
-            <h4>Tên xe: {this.state.carOrder?.carInfo?.name}</h4>
+            <h4>Tên báo: {this.state.carOrder?.carInfo?.name}</h4>
             <p>Dòng: {this.state.carOrder?.carInfo?.model}</p>
             <p>Mã: {this.state.carOrder?.carInfo?.code}</p>
             <p>Giá tiền: {money(this.state.carOrder?.carInfo?.price, "VNĐ")}</p>

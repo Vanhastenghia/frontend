@@ -368,7 +368,7 @@ function CarOrder(props) {
             </Modal.Header>
             <Spin spinning={props.orderLoading}>
               <Modal.Body>
-                <h4>Tên xe: {props?.car[0]?.name}</h4>
+                <h4>Tên báo: {props?.car[0]?.name}</h4>
                 <p>Giá: {money(props?.car[0]?.price, "VND")}</p>
                 <p>Đặt cọc trước: {money(props?.car[0]?.deposit, "VND")}</p>
                 <p>Ngày nhận xe: {carForm.time}</p>

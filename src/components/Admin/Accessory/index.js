@@ -124,9 +124,9 @@ class index extends Component {
             <div>
                 <Layout>
                     <div className='container-fluid mb-3 text-left py-2' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <span className='h3 font-weight-bold '>Phụ kiện</span>
-                        {/* <span className='h4 font-weight-bold '>Số phụ kiện: {this.props?.accessory?.data.accessory?.length}</span> */}
-                        <span ><Button icon={<PlusOutlined />} onClick={this.openModalAdd} text='Thêm phụ kiện' type="primary" >Thêm phụ kiện</Button></span>
+                        <span className='h3 font-weight-bold '>Danh sách báo</span>
+                        {/* <span className='h4 font-weight-bold '>Số bài báo: {this.props?.accessory?.data.accessory?.length}</span> */}
+                        <span ><Button icon={<PlusOutlined />} onClick={this.openModalAdd} text='Thêm báo mới' type="primary" >Thêm báo mới</Button></span>
                     </div>
                     {/* <FormFilter
                     onSubmit={this.handleSubmitFilter}
@@ -139,7 +139,7 @@ class index extends Component {
                         showImage={this.openModalImage}
                     />
                     <Modal
-                        title="Cập nhật Phụ kiện"
+                        title="Cập nhật bài báo"
                         visible={showForm}
                         closable={true}
                         onCancel={this.handleCloseModal}
@@ -156,7 +156,7 @@ class index extends Component {
                         />
                     </Modal>
                     <Modal
-                        title="Thêm Phụ kiện"
+                        title="Thêm Báo"
                         visible={showForm2}
                         closable={true}
                         onCancel={this.handleCloseModalAdd}
@@ -182,11 +182,11 @@ class index extends Component {
                             <p>Tải lên hình ảnh cho {this.state.acc?.name}</p>
                             <FileInput gallery={true} urlImage={this.handleUrlImage} update={() => this.handleUpdateAccessory(this.state.acc)}></FileInput>
                             <hr/>
-                            <p>Hình đại diện cho phụ kiện</p>{this.state.acc.image?.avatar?
+                            <p>Hình đại diện cho bài báo</p>{this.state.acc.image?.avatar?
                                 <Image width={200} src={this.state.acc.image?.avatar} /> : <Empty />
                             }
                             <hr/>
-                            <p>Hình ảnh bìa cho phụ kiện</p>{this.state.acc.image?.banner?
+                            <p>Hình ảnh bìa cho bài báo</p>{this.state.acc.image?.banner?
                                 <Image width={200} src={this.state.acc.image?.banner} />: <Empty />
                             }
                             <hr/>

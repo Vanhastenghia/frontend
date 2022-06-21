@@ -18,30 +18,30 @@ let ModalAddAccessory = props => {
             <label className={`${style.red_symbol}`}>Những trường có dấu (*) là bắt buộc </label> <br></br>
             <div className='row bg-white m-3 pt-3' >
                 <div className='col-12 mb-3 text-left' >
-                    <label className="font-weight-bold text-muted">Tên phụ kiện</label>
+                    <label className="font-weight-bold text-muted">Tên bài báo</label>
                     <label className={`${style.red_symbol}`}>*</label>
                     <Field
                         name="name"
                         component={RenderInputText}
-                        placeholder='Tên phụ kiện'
+                        placeholder='Tên bài báo'
                     />
                 </div>
                 <div className='col-12 mb-3 text-left' >
-                    <label className="font-weight-bold text-muted">Mã phụ kiện</label>
+                    <label className="font-weight-bold text-muted">Mã bài báo</label>
                     <label className={`${style.red_symbol}`}>*</label>
                     <Field
                         name="code"
                         component={RenderInputText}
-                        placeholder='Đây là phụ kiện'
+                        placeholder='Đây là báo'
                     />
                 </div>
                 <div className='col-12 mb-3 text-left' >
-                    <label className="font-weight-bold text-muted">Giá phụ kiện</label>
+                    <label className="font-weight-bold text-muted">Giá báo</label>
                     <label className={`${style.red_symbol}`}>*</label>
                     <Field
                         name="price"
                         component={RenderNumberAnt}
-                        placeholder='Giá phụ kiện'
+                        placeholder='Giá báo'
                     />
                 </div>
                 <div className='col-12 mb-3 text-left' >
@@ -63,7 +63,7 @@ let ModalAddAccessory = props => {
                         placeholder='Loại'
                     />
                 </div>
-                <div className='col-12 mb-3 text-left' >
+                {/* <div className='col-12 mb-3 text-left' >
                     <label className="font-weight-bold text-muted">Thời gian bảo hành</label>
                     <label className={`${style.red_symbol}`}>*</label>
                     <Field
@@ -89,7 +89,7 @@ let ModalAddAccessory = props => {
                         component={RenderNumberAnt}
                         placeholder='0'
                     />
-                </div>
+                </div> */}
                 <div className='col-12 mb-3 text-left' >
                     <label className="font-weight-bold text-muted">Mô tả</label>
                     <label className={`${style.red_symbol}`}>*</label>

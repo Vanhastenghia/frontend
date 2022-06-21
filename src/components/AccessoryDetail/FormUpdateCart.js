@@ -38,7 +38,7 @@ let FormUpdateCart = props => {
         <form onSubmit={handleSubmit}>
             <div className={`${style.buttomChoice} row`}>
                 <div className={`${style.choice}`}>
-                    <div className={`${style.choiceColor} col-xl-5`}>
+                    {/* <div className={`${style.choiceColor} col-xl-5`}>
                         <label className={`${style.document}`}>Màu sắc</label>
                         <Field className={`${style.buttonNumber} col-xl-9`}
                             name="color"
@@ -46,7 +46,7 @@ let FormUpdateCart = props => {
                             options={options}
                             placeholder='Màu sắc'
                         />
-                    </div>
+                    </div> */}
                     <div className={`${style.choiceNumber} col-xl-5`}>
                         <label className={`${style.document}`}>Số lượng</label>
                         <Field className={`${style.buttonNumber} col-xl-9`}

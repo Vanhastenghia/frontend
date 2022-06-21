@@ -302,7 +302,7 @@ function Car(props) {
               >
                 <Search
                   className={`${style.searchBox} `}
-                  placeholder="Nhập tên xe"
+                  placeholder="Nhập Tên báo"
                   onSearch={(e) => handleFilterValue(e, "search")}
                   enterButton="Tìm kiếm"
                 />
@@ -334,7 +334,7 @@ function Car(props) {
                 <SubMenu
                   key="sub1"
                   icon={<MenuOutlined />}
-                  title="Tên xe"
+                  title="Tên báo"
                   onClick={(e) => handleFilterValue(null, e.key)}
                 >
                   <Menu.Item key="name_asc">A-Z</Menu.Item>

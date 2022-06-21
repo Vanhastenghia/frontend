@@ -134,7 +134,7 @@ function AdminHome(props) {
                                 <Row gutter={16}>
                                     <Col span={12}>
                                         <Statistic
-                                            title="Số đơn đặt mua phụ kiện"
+                                            title="Số đơn đặt mua báo"
                                             value={props?.adminData?.accessoryBill?.length}
                                             prefix={<WalletOutlined className={`${style.accessoryBillIcon} ${style.iconPrefix}`} />}
                                         />
@@ -169,7 +169,7 @@ function AdminHome(props) {
                                             Xem thêm
                                         </Button>
                                         <Statistic
-                                            title="Số phụ kiện hiện có"
+                                            title="Số báo hiện có"
                                             value={props?.accData?.data?.accessory?.length}
                                             prefix={<DingtalkOutlined className={`${style.postIcon} ${style.iconPrefix}`} />}
                                         />
@@ -228,7 +228,7 @@ function AdminHome(props) {
                                             }).length}
                                         />
                                         {/* <Statistic
-                                    title="Số đơn đặt phụ kiện"
+                                    title="Số đơn đặt báo"
                                     value={props?.adminData?.accessoryBill?.length}
                                 />
                                 <Button
@@ -277,7 +277,7 @@ function AdminHome(props) {
                                 <Row gutter={16}>
                                     <Col span={12}>
                                         <Statistic
-                                            title="Tổng số đơn đặt mua phụ kiện"
+                                            title="Tổng số đơn đặt mua báo"
                                             value={props?.adminData?.accessoryBill?.length}
                                         />
                                         <Button
@@ -339,7 +339,7 @@ function AdminHome(props) {
                                             }
                                         />
                                         {/* <Statistic
-                                    title="Số đơn đặt phụ kiện"
+                                    title="Số đơn đặt báo"
                                     value={props?.adminData?.accessoryBill?.length}
                                 />
                                 <Button
@@ -385,7 +385,7 @@ function AdminHome(props) {
                     <Row gutter={12}>
                         <Col xs={24} xl={12} lg={24} sm={24} md={24}>
                             <div className={`${style.lineChartContainer}`}>
-                                <h3>Số lượng đơn phụ kiện theo ngày</h3>
+                                <h3>Số lượng đơn báo theo ngày</h3>
                                 <div className={`${style.lineChartCon}`}>
                                     <ResponsiveContainer width="100%" height="100%">
                                         <LineChart

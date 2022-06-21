@@ -41,7 +41,7 @@ function* addAccessoryToWishlistSaga(action) {
         }
         const response = yield call(apiUser.addItemToWishlist, data1)
         if (response.status === 'success'){
-            message.success("Chúc mừng, bạn đã thêm phụ kiện vào danh sách yêu thích thành công!")
+            message.success("Chúc mừng, bạn đã thêm báo vào danh sách yêu thích thành công!")
             yield all([
             put({ type: TYPE.ADDACCESSORYTOWISHLIST.SUCCESS, ...response }),
             put({type: TYPEUSER.GETUSER.REQUEST, ...response})])

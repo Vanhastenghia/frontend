@@ -262,14 +262,14 @@ function Accessory(props) {
         <div className={`${style.container}`}>
           <div className={`${style.headingContainer}`}>
             <div className={`${style.headings} row`}>
-              <h2 className={`${style.heading} col-xl-2`}>CÁC PHỤ KIỆN</h2>
+              <h2 className={`${style.heading} col-xl-2`}>CÁC BÀI BÁO</h2>
               <Space
                 direction="vertical"
                 className={`${style.searchGroup} col-xl-10`}
               >
                 <Search
                   className={`${style.searchBox}`}
-                  placeholder="Nhập tên phụ kiện"
+                  placeholder="Nhập tên bài báo"
                   onSearch={(e) => handleFilterValue(e, "search")}
                   enterButton="Tìm kiếm"
                 />
@@ -298,7 +298,7 @@ function Accessory(props) {
                 <SubMenu
                   key="sub1"
                   icon={<MenuOutlined />}
-                  title="Tên xe"
+                  title="Tên báo"
                   onClick={(e) => handleFilterValue(null, e.key)}
                 >
                   <Menu.Item key="name_asc">A-Z</Menu.Item>
@@ -374,7 +374,7 @@ function Accessory(props) {
                                 to={`/accessory/${item._id}`}
                                 className="btn btn-sm btn-primary"
                               >
-                                Chi tiết phụ kiện
+                                Chi tiết bài báo
                               </NavLink>
                               {item.isLiked ? (
                                 <HeartFilled

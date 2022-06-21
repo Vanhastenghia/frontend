@@ -59,16 +59,16 @@ function User(props) {
                   defaultSelectedKeys={["1"]}
                   defaultOpenKeys={["sub1"]}
                 >
-                  <Menu.Item key="1">Thông tin</Menu.Item>
+                  {/* <Menu.Item key="1">Thông tin</Menu.Item>
                   <Menu.Item key="2">
                     <Link to="/user/my-order/cars">Lịch sử đặt hàng xe</Link>
-                  </Menu.Item>
-                  <Menu.Item key="3">
+                  </Menu.Item> */}
+                  <Menu.Item key="2">
                     <Link to="/user/my-order/accessories">
-                      Lịch sử đặt hàng phụ kiện
+                      Lịch sử đặt báo
                     </Link>
                   </Menu.Item>
-                  <Menu.Item key="4">
+                  <Menu.Item key="3">
                     <a onClick={signoutHandler}> {"Đăng xuất"}</a>
                   </Menu.Item>
                 </Menu>

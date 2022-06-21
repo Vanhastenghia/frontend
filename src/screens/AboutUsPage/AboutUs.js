@@ -74,7 +74,7 @@ export default function AccessoryDetail() {
             Seven - Hiện tại, chúng tôi đang cung cấp các dòng xe từ phân khúc
             thấp đến cao, đầy đủ lựa chọn cho khách hàng. Bên cạnh đó, các phụ
             kiện đi kèm cùng là một thứ mà chúng tôi quan tâm. Chúng tôi cung
-            cấp đầy đủ phụ kiện cho các dòng xe hiện có để phụ vụ bảo trì cũng
+            cấp đầy đủ bài báo cho các dòng xe hiện có để phụ vụ bảo trì cũng
             nhưng thay đổi theo nhu cầu của khách hàng.
           </div>
           <div className={`${style.futureText} col-xl-4 col-10`}>

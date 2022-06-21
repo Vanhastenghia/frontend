@@ -25,7 +25,7 @@ const DataTable = ({ dataSource, loading, updateAccessory, deleteAccessory,showI
       render: (value, record, i) => <a>{i + 1}</a>,
     },
     {
-      title: 'Tên phụ kiện',
+      title: 'Tên bài báo',
       dataIndex: 'name',
       key: 'name',
       className: 'text-left',
@@ -42,7 +42,7 @@ const DataTable = ({ dataSource, loading, updateAccessory, deleteAccessory,showI
       render: (value, record) => <button className="btn btn-sm btn-primary" onClick={()=>onShowImage(record)}>Quản lý hình ảnh</button>
     },
     {
-      title: 'Mã phụ kiện',
+      title: 'Mã bài báo',
       dataIndex: 'code',
       key: 'code',
       className: 'text-left',

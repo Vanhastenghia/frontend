@@ -73,10 +73,10 @@ function AccessoryDetail(props) {
   };
 
   const handleUpdateCart = (value) => {
-    if (value.color == null) {
-      message.error("Chưa chọn màu sắc");
-      return;
-    }
+    // if (value.color == null) {
+    //   message.error("Chưa chọn màu sắc");
+    //   return;
+    // }
     if (!value.quantity) {
       message.error("Số lượng phải lớn hơn 0");
       return;
@@ -113,7 +113,7 @@ function AccessoryDetail(props) {
         <div className={`${style.container}`}>
           <div className={`${style.headingContainer} container`}>
             <div className={`${style.headings} `}>
-              <h2 className={`${style.heading} `}>CHI TIẾT PHỤ KIỆN</h2>
+              <h2 className={`${style.heading} `}>CHI TIẾT bài báo</h2>
             </div>
           </div>
           <div className={`${style.main} row`}>
@@ -190,13 +190,13 @@ function AccessoryDetail(props) {
                     {props.data?.data[0]?.code}
                   </div>
                 </div>
-                <div className={`${style.informationCar}`}>
+                {/* <div className={`${style.informationCar}`}>
                   <div className={`${style.document} col-xl-5`}>Thông số: </div>
                   <div className={`${style.numberCar} col-xl-5`}>
                     {props.data?.data[0]?.specification?.height} cm,{" "}
                     {props.data?.data[0]?.specification.weight} kg
                   </div>
-                </div>
+                </div> */}
                 <div className={`${style.informationCar}`}>
                   <div className={`${style.document} col-xl-5`}>Giá tiền: </div>
                   <div className={`${style.numberCar} col-xl-5`}>

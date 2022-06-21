@@ -160,7 +160,7 @@ export default function Support(props) {
               >
                 <SubMenu
                   className={`${style.questionDetail} col-xl-12 row`}
-                  title="Làm thế nào để tôi đặt phụ kiện ?"
+                  title="Làm thế nào để tôi đặt bài báo ?"
                 >
                   <Menu.Item
                     className={`${style.answerRow}`}
@@ -168,11 +168,11 @@ export default function Support(props) {
                   >
                     <p className={`${style.answer} col-xl-8`}>
                       Đầu tiên, bạn cần có tài khoản tại Seven. Sau đó, hãy đi
-                      đến trang các phụ kiện, lựa chọn phụ kiện mà bạn cần. Tiếp
+                      đến trang các bài báo, lựa chọn bài báo mà bạn cần. Tiếp
                       theo, Bạn cần tìm hiểu kĩ các thông số và lựa chọn màu sắc
                       yêu thích của mình. Sau đó, hãy đi đến trang chi tiết phụ
                       kiện, thêm sản phẩm vào giỏ hàng. Sau đó hãy mở giỏ hàng,
-                      ở đây sẽ hiển thị thông tin về các phụ kiện bạn đã chọn,
+                      ở đây sẽ hiển thị thông tin về các bài báo bạn đã chọn,
                       bạn sẽ tiến hành thanh toán. Phía công ty sẽ tiến hành xác
                       nhận thông tin và giao hàng.
                     </p>
@@ -196,9 +196,9 @@ export default function Support(props) {
                     onClick={(e) => e.preventDefault()}
                   >
                     <p className={`${style.answer} col-xl-8`}>
-                      Ở trang chi tiết xe và phụ kiện đều có một ô tìm kiếm, bạn
-                      chỉ cần nhập tên xe hoặc phụ kiện vào đó và tiềm kiếm, các
-                      thông tin xe và phụ kiện tương ứng sẽ được hiển thị. Bạn
+                      Ở trang chi tiết xe và bài báo đều có một ô tìm kiếm, bạn
+                      chỉ cần nhập Tên báo hoặc bài báo vào đó và tiềm kiếm, các
+                      thông tin xe và bài báo tương ứng sẽ được hiển thị. Bạn
                       cũng có thể sử dụng bộ lọc phía bên trái để lọc ra các sản
                       phẩm theo mong muốn.
                     </p>

@@ -18,30 +18,30 @@ let ModalUpdateAccessory = props => {
             <label className={`${style.red_symbol}`}>Những trường có dấu (*) là bắt buộc </label> <br></br>
             <div className='row bg-white m-3 pt-3' >
                 <div className='col-12 mb-3 text-left' >
-                    <label className="font-weight-bold text-muted">Tên phụ kiện</label>
+                    <label className="font-weight-bold text-muted">Tên bài báo</label>
                     <label className={`${style.red_symbol}`}>*</label>
                     <Field
                         name="name"
                         component={RenderInputText}
-                        placeholder='Tên phụ kiện'
+                        placeholder='Tên bài báo'
                     />
                 </div>
                 <div className='col-12 mb-3 text-left' >
-                    <label className="font-weight-bold text-muted">Mã phụ kiện</label>
+                    <label className="font-weight-bold text-muted">Mã bài báo</label>
                     <label className={`${style.red_symbol}`}>*</label>
                     <Field
                         name="code"
                         component={RenderInputText}
-                        placeholder='Đây là phụ kiện'
+                        placeholder='Đây là bài báo'
                     />
                 </div>
                 <div className='col-12 mb-3 text-left' >
-                    <label className="font-weight-bold text-muted">Giá phụ kiện</label>
+                    <label className="font-weight-bold text-muted">Giá bài báo</label>
                     <label className={`${style.red_symbol}`}>*</label>
                     <Field
                         name="price"
                         component={RenderNumberAnt}
-                        placeholder='Giá phụ kiện'
+                        placeholder='Giá bài báo'
                     />
                 </div>
                 <div className='col-12 mb-3 text-left' >

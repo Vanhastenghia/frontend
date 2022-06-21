@@ -97,7 +97,7 @@ function Layouts(props) {
               </NavLink>
             </Menu.Item>
 
-            <Menu.Item key="cars">
+            {/* <Menu.Item key="cars">
               <NavLink
                 to={`/car`}
                 style={{ color: "#F3EA01" }}
@@ -106,9 +106,9 @@ function Layouts(props) {
                 {" "}
                 CÁC DÒNG XE{" "}
               </NavLink>
-            </Menu.Item>
+            </Menu.Item> */}
 
-            <Menu.Item key="showrooms">
+            {/* <Menu.Item key="showrooms">
               <NavLink
                 to={`/showroom`}
                 style={{ color: "#F3EA01" }}
@@ -117,7 +117,7 @@ function Layouts(props) {
                 {" "}
                 SHOWROOMS{" "}
               </NavLink>
-            </Menu.Item>
+            </Menu.Item> */}
 
             <Menu.Item key="accessory">
               <NavLink
@@ -126,7 +126,7 @@ function Layouts(props) {
                 activeClassName={"activeNav"}
               >
                 {" "}
-                PHỤ KIỆN{" "}
+                DANH SÁCH BÁO{" "}
               </NavLink>
             </Menu.Item>
 

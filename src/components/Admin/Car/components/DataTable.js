@@ -28,7 +28,7 @@ const DataTable = ({ dataSource, loading, updateCar, deleteCar, showImage }) => 
       render: (value, record, i) => <a>{i + 1}</a>,
     },
     {
-      title: 'Tên xe',
+      title: 'Tên báo',
       dataIndex: 'name',
       key: 'name',
       className: 'text-left',

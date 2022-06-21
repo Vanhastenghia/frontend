@@ -36,17 +36,17 @@ function* CreateSaga(action) {
         let data = params
         const response = yield call(api.create, data)
         if (response.status==='success') {
-            message.success('Tạo phụ kiện thành công')
+            message.success('Tạo bài báo thành công')
             yield all([
                 put({ type: TYPE.CREATE.SUCCESS, ...response }),
                 put({ type: TYPE.ACCESSORYADMIN.REQUEST, params: { status: 1 } })
             ])
         } else {
-            message.error('Tạo phụ kiện thất bại\n',response.message)
+            message.error('Tạo bài báo thất bại\n',response.message)
             yield put({ type: TYPE.CREATE.ERROR, error: response })
         }
     } catch (error) {
-        message.error('Tạo phụ kiện thất bại\n',error.message)
+        message.error('Tạo bài báo thất bại\n',error.message)
         yield all([
             put({ type: TYPE.CREATE.ERROR, error })
         ])
@@ -58,17 +58,17 @@ function* UpdateSaga(action) {
         const { id, params } = action
         const response = yield call(api.update, id, params)
         if (response.status==='success') {
-            message.success('Cập nhật phụ kiện thành công')
+            message.success('Cập nhật bài báo thành công')
             yield all([
                 put({ type: TYPE.UPDATE.SUCCESS, ...response }),
                 put({ type: TYPE.ACCESSORYADMIN.REQUEST, params: { status: 1 } })
             ])
         } else {
-            message.error('Cập nhật phụ kiện thất bại\n',response.message)
+            message.error('Cập nhật bài báo thất bại\n',response.message)
             yield put({ type: TYPE.UPDATE.ERROR, error: response })
         }
     } catch (error) {
-        message.error('Cập nhật phụ kiện thất bại\n',error.message)
+        message.error('Cập nhật bài báo thất bại\n',error.message)
         yield all([
             put({ type: TYPE.UPDATE.ERROR, error })
         ])
@@ -80,17 +80,17 @@ function* DeleteSaga(action) {
         const { id } = action
         const response = yield call(api.destroy, id)
         if (response.status==='success') {
-            message.success('Xóa phụ kiện thành công')
+            message.success('Xóa bài báo thành công')
             yield all([
                 put({ type: TYPE.DELETE.SUCCESS, ...response }),
                 put({ type: TYPE.ACCESSORYADMIN.REQUEST, params: { status: 1 } }),
             ])
         } else {
-            message.error('Xóa phụ kiện thất bại\n',response.message)
+            message.error('Xóa bài báo thất bại\n',response.message)
             yield put({ type: TYPE.DELETE.ERROR, error: response })
         }
     } catch (error) {
-        message.error('Xóa phụ kiện thất bại\n',error.message)
+        message.error('Xóa bài báo thất bại\n',error.message)
         yield all([
             put({ type: TYPE.DELETE.ERROR, error })
         ])

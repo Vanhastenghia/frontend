@@ -79,7 +79,7 @@ class index extends Component {
             className="container-fluid mb-3 text-left py-2"
             style={{ display: "flex", justifyContent: "space-between" }}
           >
-            <span className="h3 font-weight-bold ">Đơn hàng Phụ kiện</span>
+            <span className="h3 font-weight-bold ">Đơn hàng đặt báo</span>
           </div>
           {/* <FormFilter onSubmit={this.handleSubmitFilter} /> */}
           
@@ -150,7 +150,7 @@ class index extends Component {
                     }
                     description={'Số lượng: ' + item.quantity}
                   />
-                  <div>{'màu sắc: ' + item.color}</div>
+                  {/* <div>{'màu sắc: ' + item.color}</div> */}
                 </List.Item>
               )}
             />
