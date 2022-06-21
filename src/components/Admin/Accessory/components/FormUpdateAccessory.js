@@ -63,7 +63,7 @@ let ModalUpdateAccessory = props => {
                         placeholder='Loại'
                     />
                 </div>
-                <div className='col-12 mb-3 text-left' >
+                {/* <div className='col-12 mb-3 text-left' >
                     <label className="font-weight-bold text-muted">Thời gian bảo hành</label>
                     <label className={`${style.red_symbol}`}>*</label>
                     <Field
@@ -89,7 +89,7 @@ let ModalUpdateAccessory = props => {
                         component={RenderNumberAnt}
                         placeholder='0'
                     />
-                </div>
+                </div> */}
                 <div className='col-12 mb-3 text-left' >
                     <label className="font-weight-bold text-muted">Mô tả</label>
                     <label className={`${style.red_symbol}`}>*</label>
